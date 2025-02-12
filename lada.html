@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лада Андреевна вы просто котик!</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Подключение внешнего CSS -->
+</head>
+<body>
+    <h1>Лада Андреевна вы просто котик!</h1>
+    <img src="лада.jpg" alt="Пример изображения">
+    
+    <button id="complimentButton"> Озвучить свое мнение </button>
+    <p id="compliment">Самый приятный человек во всем KFC!</p>
+
+    <button id="smileButton">Улыбнитесь!</button>
+    <p id="smileMessage">Надеюсь улыбнулись!</p>
+
+    <script>
+        const complimentButton = document.getElementById('complimentButton');
+        const compliment = document.getElementById('compliment');
+        const smileButton = document.getElementById('smileButton');
+        const smileMessage = document.getElementById('smileMessage');
+
+        complimentButton.addEventListener('click', function() {
+            compliment.style.display = 'block';
+            complimentButton.style.display = 'none'; // Скрыть кнопку после нажатия
+        });
+
+        smileButton.addEventListener('click', function() {
+            smileMessage.style.display = 'block';
+            smileButton.style.display = 'none'; // Скрыть кнопку после нажатия
+        });
+    </script>
+</body>
+</html>
